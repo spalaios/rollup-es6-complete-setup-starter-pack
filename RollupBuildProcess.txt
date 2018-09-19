@@ -1,0 +1,37 @@
+1) Basic rollup build process --> follow the link https://rollupjs.org/guide/en#creating-your-first-bundle
+Note: this basic rollup  only uses es6 features.So inorder to transpile it to es5 use babel-setup with rollup
+
+2)added watch feature provided by rollup
+command added as npm watch as rollup -c watch
+
+3)setting up babel for transpiling in rollup
+
+- intall the following packages
+    //this is the core of the babel on which many other babel packages are dependent
+    "@babel/core": "^7.1.0",
+
+    //This plugin contains helper functions that’ll be placed at the top of the generated code
+    "@babel/plugin-external-helpers": "^7.0.0",
+
+    //this tells babel how to transpile es6 basically it is a collection of plugins 
+    //instead of manually installing each plugins one by one we can use the preset
+    "@babel/preset-env": "^7.1.0",
+
+
+    //this plugin tells rollup js to use babel while transpiling
+    "rollup-plugin-babel": "^4.0.3"
+
+- set up the .babelrc file 
+    {
+    "presets": [
+        [
+            "@babel/preset-env", 
+            {
+                "modules": false
+            }
+        ]
+    ],
+    "plugins": [
+        "@babel/external-helpers"
+    ]
+}
