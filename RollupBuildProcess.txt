@@ -45,3 +45,15 @@ command added as npm watch as rollup -c watch
     option of source: 'inline' will generate the source at the bottom of your output file.
 
 5)Eslint
+
+-follow this link to start the process of installing Eslint --> https://eslint.org/docs/user-guide/getting-started
+ after following the above given link you will have setup the eslint with your given choice of elint standards
+
+-install rollup-plugin-eslint packages
+why? -> Rollup plugin to verify entry point and all imported files with ESLint.
+and then import at top of rollup.config.js file import { eslint } from 'rollup-plugin-eslint';
+then add eslint() in plugins array property
+
+6)Prettifier
+
+
