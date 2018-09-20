@@ -3,12 +3,13 @@ export default {
     input : 'src/modules/main.js',
     output : {
         file : './build/bundle.js',
-        format : 'iife'
+        format : 'iife',
+        name: 'Suraj',
+        sourcemap: true
     },
-    moduleName : 'Linux',
     plugins : [
         babel({
             exclude: 'node_module/**'
         })
-    ]
+    ],
 };

@@ -6,7 +6,6 @@
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.1.0",
-    "@babel/plugin-external-helpers": "^7.0.0",
     "@babel/preset-env": "^7.1.0",
     "rollup": "^0.66.1",
     "rollup-plugin-babel": "^4.0.3"

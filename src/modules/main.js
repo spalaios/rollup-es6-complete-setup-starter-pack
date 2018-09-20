@@ -8,5 +8,9 @@ const divide = (a, b) => {
     return b/a;
 }
 
+if(true) {
+    throw new Error('this is my error deal with it');
+}
+
 export  {add, substract, divide};
 

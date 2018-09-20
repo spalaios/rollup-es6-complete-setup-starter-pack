@@ -1,4 +1,4 @@
-var Linux = (function (exports) {
+var Suraj = (function (exports) {
     'use strict';
 
     function add(x, y) {
@@ -10,6 +10,7 @@ var Linux = (function (exports) {
         return a - b;
       }
 
+      console.log('i m two.js');
       return b - a;
     }
 
@@ -20,6 +21,10 @@ var Linux = (function (exports) {
       return b / a;
     };
 
+    {
+      throw new Error('this is my error deal with it');
+    }
+
     exports.add = add;
     exports.substract = substract;
     exports.divide = divide;
@@ -27,3 +32,4 @@ var Linux = (function (exports) {
     return exports;
 
 }({}));
+//# sourceMappingURL=bundle.js.map

@@ -21,6 +21,8 @@ command added as npm watch as rollup -c watch
     //this plugin tells rollup js to use babel while transpiling
     "rollup-plugin-babel": "^4.0.3"
 
+- look at the rollup.config.js to see how those above packages are used
+
 - set up the .babelrc file 
     {
     "presets": [
@@ -35,3 +37,11 @@ command added as npm watch as rollup -c watch
         "@babel/external-helpers"
     ]
 }
+
+4)Using source maps --> follow this link to know about source maps : https://www.schneems.com/2017/11/14/wtf-is-a-source-map/
+    
+    in rollup.config.js under the output object add a property named sourcemap: true
+    this will generate a seperate source map bundle file at the ouput path of your output file and will also place the mapping text at the bottom of your final output file.
+    option of source: 'inline' will generate the source at the bottom of your output file.
+
+5)Eslint
